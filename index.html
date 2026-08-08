@@ -7,7 +7,6 @@
 <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
 <title>W-4 Withholding Calculator 2024 — Free Federal Tax Estimator | Tabutility</title>
 <meta name="description" content="Calculate how much federal income tax should be withheld from your paycheck. Estimate your W-4 allowances for 2024 based on filing status, income, and deductions."/>
 <link rel="canonical" href="https://w4-calculator.tabutility.com/"/>
@@ -22,42 +21,43 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-78VZWJ5B1W');</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f8f7f4;color:#0f172a;min-height:100vh}
-nav{background:#ffffff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e2e8f0}
+body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh}
+nav{background:#1e293b;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #334155}
 nav a{color:#a5b4fc;text-decoration:none;font-size:14px;font-weight:600}
 .container{max-width:700px;margin:0 auto;padding:24px 16px}
 h1{font-size:clamp(20px,4vw,30px);font-weight:800;margin-bottom:8px}
-.subtitle{color:#64748b;font-size:15px;margin-bottom:24px}
-.card{background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;padding:22px;margin-bottom:18px}
+.subtitle{color:#94a3b8;font-size:15px;margin-bottom:24px}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:22px;margin-bottom:18px}
 .card h2{font-size:15px;font-weight:700;color:#a5b4fc;margin-bottom:16px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.field label{display:block;font-size:11px;color:#64748b;margin-bottom:4px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
-.field input,.field select{width:100%;background:#f8f7f4;border:1px solid #475569;border-radius:8px;padding:10px 12px;color:#0f172a;font-size:15px;outline:none}
+.field label{display:block;font-size:11px;color:#94a3b8;margin-bottom:4px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.field input,.field select{width:100%;background:#0f172a;border:1px solid #475569;border-radius:8px;padding:10px 12px;color:#f1f5f9;font-size:15px;outline:none}
 .field input:focus,.field select:focus{border-color:#6366f1}
 .btn{width:100%;background:#6366f1;color:#fff;border:none;border-radius:10px;padding:13px;font-size:16px;font-weight:700;cursor:pointer;margin-top:6px}
 .result-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
-.result-box{background:#f8f7f4;border-radius:10px;padding:16px;text-align:center}
+.result-box{background:#0f172a;border-radius:10px;padding:16px;text-align:center}
 .result-box .val{font-size:24px;font-weight:800;color:#34d399;margin-bottom:4px}
 .result-box .lbl{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:.05em}
 .status-bar{border-radius:10px;padding:14px;margin-top:4px;font-size:14px;font-weight:600;text-align:center}
 .status-ok{background:#064e3b;color:#34d399}
 .status-warn{background:#422006;color:#fb923c}
-.breakdown p{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #e2e8f0;font-size:13px;color:#64748b}
+.breakdown p{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #334155;font-size:13px;color:#94a3b8}
 .breakdown p:last-child{border:none;font-weight:700;color:#f8fafc}
-.adslot{min-height:90px;background:#ffffff;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#475569;font-size:12px;margin:20px 0}
-.faq-item{border-bottom:1px solid #e2e8f0;padding:14px 0}
+.adslot{min-height:90px;background:#1e293b;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#475569;font-size:12px;margin:20px 0}
+.faq-item{border-bottom:1px solid #334155;padding:14px 0}
 .faq-item summary{cursor:pointer;font-weight:600;color:#e2e8f0;list-style:none;font-size:14px}
-.faq-item p{color:#64748b;font-size:13px;margin-top:8px;line-height:1.6}
-footer{text-align:center;padding:32px 16px;color:#475569;font-size:12px;border-top:1px solid #ffffff;margin-top:32px}
+.faq-item p{color:#94a3b8;font-size:13px;margin-top:8px;line-height:1.6}
+footer{text-align:center;padding:32px 16px;color:#475569;font-size:12px;border-top:1px solid #1e293b;margin-top:32px}
 @media(max-width:500px){.grid,.result-grid{grid-template-columns:1fr}}
 </style>
-<style id="tabutility-brand">
-/* empty ad slots: reserve space, no bordered box */
-.ad-banner,.ad-slot,.ad-container{background:transparent!important;border:none!important;border-bottom:none!important;box-shadow:none!important}
+<style id="tabutility-brand-v2">
+/* Canonical dark-surface spec (STYLE.md): indigo accent, white text on indigo */
+.btn,.toggle-btn.active,button.active{color:#fff!important}
+nav .brand{color:#fff}
+nav a:hover{color:#818cf8}
+input:focus,select:focus,textarea:focus{border-color:#818cf8!important}
 /* AdSense not yet approved: hide all ad frames (container min-height still reserves space). Remove these two lines after approval. */
 ins.adsbygoogle,.ad-banner iframe,.ad-slot iframe,.ad-container iframe{visibility:hidden!important}
-nav .brand{color:#0f172a}
-body{-webkit-font-smoothing:antialiased}
 </style>
 </head>
 <body>
@@ -91,24 +91,24 @@ body{-webkit-font-smoothing:antialiased}
   </div>
   
 <!-- embed-widget -->
-<div style="max-width:640px;margin:0 auto 32px;background:#ffffff;border:1px solid #e2e8f0;border-radius:12px;padding:18px">
-  <h2 style="font-size:15px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Embed This Tool</h2>
+<div style="max-width:640px;margin:0 auto 32px;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:18px">
+  <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Embed This Tool</h2>
   <p style="font-size:13px;color:#64748b;margin-bottom:12px">Add this W-4 Withholding Calculator 2024 to your website or blog for free — just paste this code:</p>
-  <div style="background:#f8f7f4;border:1px solid #e2e8f0;border-radius:8px;padding:12px;font-family:'Inter',monospace;font-size:12px;color:#7dd3fc;word-break:break-all;margin-bottom:10px" id="embed-code">&lt;iframe src=&quot;https://w4-calculator.tabutility.com/&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; style=&quot;border-radius:12px&quot; title=&quot;W-4 Withholding Calculator 2024 by Tabutility&quot;&gt;&lt;/iframe&gt;
+  <div style="background:#0f172a;border:1px solid #334155;border-radius:8px;padding:12px;font-family:monospace;font-size:12px;color:#818cf8;word-break:break-all;margin-bottom:10px" id="embed-code">&lt;iframe src=&quot;https://w4-calculator.tabutility.com/&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; style=&quot;border-radius:12px&quot; title=&quot;W-4 Withholding Calculator 2024 by Tabutility&quot;&gt;&lt;/iframe&gt;
 &lt;p style=&quot;font-size:12px&quot;&gt;&lt;a href=&quot;https://w4-calculator.tabutility.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;W-4 Withholding Calculator 2024&lt;/a&gt; by &lt;a href=&quot;https://tabutility.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tabutility&lt;/a&gt;&lt;/p&gt;</div>
-  <button onclick="navigator.clipboard.writeText(document.getElementById('embed-code').textContent).then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy Embed Code',2000)})" style="background:#0f172a;color:#f8f7f4;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer">Copy Embed Code</button>
+  <button onclick="navigator.clipboard.writeText(document.getElementById('embed-code').textContent).then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy Embed Code',2000)})" style="background:#4f46e5;color:#0f172a;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer">Copy Embed Code</button>
   <span style="font-size:11px;color:#475569;margin-left:12px">Free to use — the credit link helps others find the tool</span>
 </div>
-<div style="margin:0 auto 24px;max-width:640px;background:#ffffff;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid #e2e8f0" onclick="window.open('https://www.amazon.com/s?k=personal+finance+tax+books+usa&tag=tabutility-20','_blank','noopener noreferrer')">
+<div style="margin:0 auto 24px;max-width:640px;background:#1e293b;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid #334155" onclick="window.open('https://www.amazon.com/s?k=personal+finance+tax+books+usa&tag=tabutility-20','_blank','noopener noreferrer')">
     <span style="font-size:28px;flex-shrink:0">📚</span>
-    <div><div style="font-size:13px;font-weight:700;color:#0f172a;margin-bottom:3px">Master your US taxes</div><div style="font-size:12px;color:#64748b">Browse personal finance books <span style="color:#f59e0b">→ Browse on Amazon</span></div><div style="font-size:10px;color:#475569;margin-top:3px">As an Amazon Associate we earn from qualifying purchases.</div></div>
+    <div><div style="font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:3px">Master your US taxes</div><div style="font-size:12px;color:#94a3b8">Browse personal finance books <span style="color:#f59e0b">→ Browse on Amazon</span></div><div style="font-size:10px;color:#475569;margin-top:3px">As an Amazon Associate we earn from qualifying purchases.</div></div>
   </div>
-  <h2 style="font-size:15px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px">Related Tools</h2>
+  <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px">Related Tools</h2>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-bottom:32px">
-    <a href="https://us-paycheck-calculator.tabutility.com/" style="display:block;background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;text-decoration:none"><div style="font-size:13px;font-weight:600;color:#0f172a">US Paycheck Calculator</div><div style="font-size:11px;color:#64748b;margin-top:2px">Calculators</div></a>
-    <a href="https://us-self-employment-tax.tabutility.com/" style="display:block;background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;text-decoration:none"><div style="font-size:13px;font-weight:600;color:#0f172a">Self-Employment Tax</div><div style="font-size:11px;color:#64748b;margin-top:2px">Calculators</div></a>
-    <a href="https://us-tax-bracket-calculator.tabutility.com/" style="display:block;background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;text-decoration:none"><div style="font-size:13px;font-weight:600;color:#0f172a">US Tax Bracket Calculator</div><div style="font-size:11px;color:#64748b;margin-top:2px">Calculators</div></a>
-    <a href="https://us-401k.tabutility.com/" style="display:block;background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;text-decoration:none"><div style="font-size:13px;font-weight:600;color:#0f172a">401(k) Calculator</div><div style="font-size:11px;color:#64748b;margin-top:2px">Calculators</div></a>
+    <a href="https://us-paycheck-calculator.tabutility.com/" style="display:block;background:#1e293b;border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none"><div style="font-size:13px;font-weight:600;color:#f1f5f9">US Paycheck Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div></a>
+    <a href="https://us-self-employment-tax.tabutility.com/" style="display:block;background:#1e293b;border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none"><div style="font-size:13px;font-weight:600;color:#f1f5f9">Self-Employment Tax</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div></a>
+    <a href="https://us-tax-bracket-calculator.tabutility.com/" style="display:block;background:#1e293b;border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none"><div style="font-size:13px;font-weight:600;color:#f1f5f9">US Tax Bracket Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div></a>
+    <a href="https://us-401k.tabutility.com/" style="display:block;background:#1e293b;border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none"><div style="font-size:13px;font-weight:600;color:#f1f5f9">401(k) Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div></a>
   </div>
   <div class="card">
     <h2>Frequently Asked Questions</h2>
